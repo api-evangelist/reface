@@ -1,7 +1,28 @@
 aid: reface
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reface.png
 name: Reface
-description: Reface is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Reface (NeoCortext, Inc.) is an AI-native consumer app studio best known for its
+  flagship Reface face-swap and AI-avatar application, alongside a portfolio of
+  generative media apps including Revive (photo animation), Restyle (AI photo and
+  video filters), Ink AI (virtual tattoo try-on), BitePal (AI calorie tracking),
+  Lightly (AI journaling), Letsy (virtual clothing try-on), and Memomet. Backed by
+  a16z, Reface builds and distributes mobile-first generative AI experiences directly
+  to consumers via the App Store and Google Play. As of this profile the company
+  publishes no public developer API, SDK, or developer portal; its surface is consumer
+  applications rather than a programmable platform. This APIs.json profile is a
+  company lead in the API Evangelist network awaiting any future developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/reface/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- Generative AI
+- Face Swap
+- Consumer Apps
+- Photo and Video
+- Mobile
 apis: []
+common:
+- type: DomainSecurity
+  url: security/reface-domain-security.yml
+- type: Website
+  url: https://reface.ai
+- type: PrivacyPolicy
+  url: https://reface.ai/privacy
+- type: TermsOfService
+  url: https://reface.ai/terms
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
